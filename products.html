@@ -1,0 +1,492 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Products</title>
+    <style>
+        body {
+            background-image: linear-gradient();
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+            box-shadow: 5px 4px 7px #c9c9c9;
+            border: 1px solid rgb(247, 247, 247);
+            border-radius: 5px;
+        }
+
+        .list-group {
+            margin: 20px;
+        }
+
+        .list {
+            border: 2px solid rgb(226, 226, 226);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .category-details {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .btn {
+            margin: 10px;
+        }
+
+        .save {
+            background-color: #109154;
+            color: white;
+            display: none;
+        }
+
+        .save:hover {
+            color: white;
+            background-color: #157347;
+        }
+
+        .food {
+            display: flex;
+            align-items: center;
+        }
+
+        .food-image {
+            width: 80px;
+            height: 80px;
+            background-image: url('/images/veg-manchurian.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 5px;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        input {
+            display: none;
+            font-size: 15px;
+            padding: 5px 10px;
+            margin: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Menu Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./products.html">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Products</h1>
+    <ul class="list-group list-group-flush">
+        <div class="category-details">
+            <h4>Starters</h4>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/veg-manchurian.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Veg Manchurian</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/tandoori-paneer.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Tandoori Paneer</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/chicken-manchurian.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Chicken Manchurian</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/chicken-noodle.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Chicken Noodles</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/chicken-lollipop.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Chicken Lollipop</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/aloo-pakora.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Aloo Pakoda</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="category-details">
+            <h4>Main Course</h4>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/andhra-thali.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Andhra Thali</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/rajasthani-thali.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Rajasthani Thali</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/paneer-butter.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Paneer Butter Masala</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/shahi-paneer.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Shahi Paneer</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/tandoori-mushroom.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Tandoori Mushroom Gravy</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/aloo-matar.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Aloo Matar Curry</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/naan-roti.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Naan Roti</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/phulka.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Phulka</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="category-details">
+            <h4>Rice</h4>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/dal-rice.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Dal Rice</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/veg-biryani.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Veg Biryani</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/handi-biryani.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Veg Handi Biryani</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/chicken-biryani.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Chicken Biryani</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/curd-rice.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Curd Rice</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="category-details">
+            <h4>Soups</h4>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/manchurian-soup.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Manchurian Soup</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/tomato-soup.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Tomato Soup</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/schzewan-soup.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Schzewan Soup</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/sweet-corn-soup.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Sweet Corn Soup</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="category-details">
+            <h4>Desserts</h4>
+            <ul class="list">
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/ice-cream.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Vanilla/Butter Scotch/Strawberry Ice-cream</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/belgium.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Belgium Chocolate Shake</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/strawberry.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Strawberry Shake</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/mango-shake.jfif" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Mango Shake</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/gulabjamun.jpg" alt="" width="80px" height="80px">
+                        <h6 class="prod-name">Gulabjamun</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div class="food">
+                        <img src="/images/rasmalai.jpg" alt="" width=" 80px" height="80px">
+                        <h6 class="prod-name">Ras Malai</h6>
+                        <input type="text" name="name" id="" class="product-name">
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success">Edit</button>
+                        <button type="button" class="btn save">Save</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </ul>
+    <script src="./product.js"></script>
+</body>
+
+</html>

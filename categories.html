@@ -1,0 +1,149 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Categories</title>
+    <style>
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list-group {
+            margin: 20px;
+        }
+
+        .category-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+            margin: 10px;
+        }
+
+        .save {
+            background-color: #109154;
+            color: white;
+            display: none;
+        }
+
+        .save:hover {
+            color: white;
+            background-color: #157347;
+        }
+
+        input {
+            display: none;
+            font-size: 17px;
+            padding: 5px 10px;
+            margin: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Menu Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./products.html">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="categories">
+        <h1>Categories</h1>
+        <ul id="list" class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="category-details">
+                    <h4 class="cat-name">Starters</h4>
+                    <input type="text" name="name" id="" class="category-name">
+                    <p class="cat-description">Includes noodles, manchurians and many more.</p>
+                    <input type="text" name="name" id="" class="category-description">
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn save">Save</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="category-details">
+                    <h4 class="cat-name">Main Course</h4>
+                    <input type="text" name="name" id="" class="category-name">
+                    <p class="cat-description">Main course includes thalis, gravies, roties, family packs, etc.</p>
+                    <input type="text" name="name" id="" class="category-description">
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn save">Save</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="category-details">
+                    <h4 class="cat-name">Rice</h4>
+                    <input type="text" name="name" id="" class="category-name">
+                    <p class="cat-description">Includes biryanis, curd rice, dal rice, etc.</p>
+                    <input type="text" name="name" id="" class="category-description">
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn save">Save</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="category-details">
+                    <h4 class="cat-name">Soups</h4>
+                    <input type="text" name="name" id="" class="category-name">
+                    <p class="cat-description">Contains all types of soups.</p>
+                    <input type="text" name="name" id="" class="category-description">
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn save">Save</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="category-details">
+                    <h4 class="cat-name">Desserts</h4>
+                    <input type="text" name="name" id="" class="category-name">
+                    <p class="cat-description">Includes ice-creams, shakes, sweets.</p>
+                    <input type="text" name="name" id="" class="category-description">
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn save">Save</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./category.js"></script>
+</body>
+
+</html>
