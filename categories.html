@@ -17,6 +17,7 @@
         .list-group-item {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         .list-group {
@@ -50,6 +51,19 @@
             margin: 10px;
             width: 300px;
         }
+
+        .category {
+            display: flex;
+        }
+
+        img {
+            margin: 5px;
+        }
+
+        .cat-details {
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 
@@ -78,9 +92,14 @@
         <ul id="list" class="list-group list-group-flush">
             <li class="list-group-item">
                 <div class="category-details">
-                    <h4 class="cat-name">Starters</h4>
+                    <div class="category">
+                        <img src="/images/starters.jpg" alt="" width="110px" height="90px">
+                        <div class="cat-details">
+                            <h4 class="cat-name">Starters</h4>
+                            <p class="cat-description">Includes noodles, manchurians and many more.</p>
+                        </div>
+                    </div>
                     <input type="text" name="name" id="" class="category-name">
-                    <p class="cat-description">Includes noodles, manchurians and many more.</p>
                     <input type="text" name="name" id="" class="category-description">
                 </div>
                 <div class="buttons">
@@ -91,9 +110,15 @@
             </li>
             <li class="list-group-item">
                 <div class="category-details">
-                    <h4 class="cat-name">Main Course</h4>
+                    <div class="category">
+                        <img src="/images/main-course.jpg" alt="" width="110px" height="90px">
+                        <div class="cat-details">
+                            <h4 class="cat-name">Main Course</h4>
+                            <p class="cat-description">Main course includes thalis, gravies, roties, family packs, etc.
+                            </p>
+                        </div>
+                    </div>
                     <input type="text" name="name" id="" class="category-name">
-                    <p class="cat-description">Main course includes thalis, gravies, roties, family packs, etc.</p>
                     <input type="text" name="name" id="" class="category-description">
                 </div>
                 <div class="buttons">
@@ -104,9 +129,14 @@
             </li>
             <li class="list-group-item">
                 <div class="category-details">
-                    <h4 class="cat-name">Rice</h4>
+                    <div class="category">
+                        <img src="/images/rice.jpg" alt="" width="110px" height="90px">
+                        <div class="cat-details">
+                            <h4 class="cat-name">Rice</h4>
+                            <p class="cat-description">Includes biryanis, curd rice, dal rice, etc.</p>
+                        </div>
+                    </div>
                     <input type="text" name="name" id="" class="category-name">
-                    <p class="cat-description">Includes biryanis, curd rice, dal rice, etc.</p>
                     <input type="text" name="name" id="" class="category-description">
                 </div>
                 <div class="buttons">
@@ -117,9 +147,14 @@
             </li>
             <li class="list-group-item">
                 <div class="category-details">
-                    <h4 class="cat-name">Soups</h4>
+                    <div class="category">
+                        <img src="/images/soup.jpg" alt="" width="110px" height="90px">
+                        <div class="cat-details">
+                            <h4 class="cat-name">Soups</h4>
+                            <p class="cat-description">Contains all types of soups.</p>
+                        </div>
+                    </div>
                     <input type="text" name="name" id="" class="category-name">
-                    <p class="cat-description">Contains all types of soups.</p>
                     <input type="text" name="name" id="" class="category-description">
                 </div>
                 <div class="buttons">
@@ -130,9 +165,14 @@
             </li>
             <li class="list-group-item">
                 <div class="category-details">
-                    <h4 class="cat-name">Desserts</h4>
+                    <div class="category">
+                        <img src="/images/desserts.jpg" alt="" width="110px" height="90px">
+                        <div class="cat-details">
+                            <h4 class="cat-name">Desserts</h4>
+                            <p class="cat-description">Includes ice-creams, shakes, sweets.</p>
+                        </div>
+                    </div>
                     <input type="text" name="name" id="" class="category-name">
-                    <p class="cat-description">Includes ice-creams, shakes, sweets.</p>
                     <input type="text" name="name" id="" class="category-description">
                 </div>
                 <div class="buttons">
